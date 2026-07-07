@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>活動流程 | 昱恩 ＆ 雨蕎</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Noto+Serif+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="subpage">
+
+  <!-- ══════════ 導覽列 ══════════ -->
+  <header class="nav" id="top">
+    <a class="nav-monogram" href="index.html">Y <span class="amp">&amp;</span> Y</a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" data-i18n="nav.home">首頁</a>
+      <a href="gallery.html" data-i18n="nav.gallery">甜蜜相簿</a>
+      <a href="events.html" data-i18n="nav.events">活動流程</a>
+      <a href="parking.html" data-i18n="nav.parking">停車資訊</a>
+      <a href="faq.html" data-i18n="nav.faq">常見問題</a>
+    </nav>
+
+    <div class="nav-right">
+      <button class="lang-btn" id="langBtn" aria-label="切換語言 / Switch language">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6">
+          <circle cx="12" cy="12" r="9"/>
+          <path d="M3 12h18M12 3c2.5 2.6 3.8 5.7 3.8 9S14.5 18.4 12 21c-2.5-2.6-3.8-5.7-3.8-9S9.5 5.6 12 3z"/>
+        </svg>
+        <span id="langLabel">EN</span>
+      </button>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false">
+        <span data-i18n="nav.menu">選單</span>
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+          <path d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="section section-tinted" id="events">
+      <p class="section-script">Schedule</p>
+      <h2 class="section-title" data-i18n="events.title">活動流程</h2>
+      <div class="section-divider" aria-hidden="true"><span class="line"></span><span class="gem">◆</span><span class="line"></span></div>
+
+      <div class="event-cards">
+        <article class="event-card">
+          <div class="event-icon" aria-hidden="true">⛪</div>
+          <h3 data-i18n="events.ceremony.title">結婚典禮</h3>
+          <dl>
+            <div class="event-row">
+              <dt data-i18n="events.label.time">時間</dt>
+              <dd data-i18n="events.ceremony.time">2027/5/23（日）早上 9:30</dd>
+            </div>
+            <div class="event-row">
+              <dt data-i18n="events.label.place">地點</dt>
+              <dd data-i18n="events.ceremony.place">真耶穌教會十全教會</dd>
+            </div>
+            <div class="event-row">
+              <dt data-i18n="events.label.addr">地址</dt>
+              <dd data-i18n="events.ceremony.addr">804 高雄市鼓山區龍子里大順一路 611 號</dd>
+            </div>
+          </dl>
+          <a class="map-btn" target="_blank" rel="noopener"
+             href="https://www.google.com/maps/search/?api=1&query=%E7%9C%9F%E8%80%B6%E7%A9%8C%E6%95%99%E6%9C%83%E5%8D%81%E5%85%A8%E6%95%99%E6%9C%83">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/>
+            </svg>
+            <span data-i18n="events.map">開啟地圖 Map</span>
+          </a>
+        </article>
+
+        <article class="event-card">
+          <div class="event-icon" aria-hidden="true">🥂</div>
+          <h3 data-i18n="events.banquet.title">婚宴</h3>
+          <dl>
+            <div class="event-row">
+              <dt data-i18n="events.label.time">時間</dt>
+              <dd data-i18n="events.banquet.time">2027/5/23（日）下午 1:00</dd>
+            </div>
+            <div class="event-row">
+              <dt data-i18n="events.label.place">地點</dt>
+              <dd data-i18n="events.banquet.place">老新台菜十全店</dd>
+            </div>
+            <div class="event-row">
+              <dt data-i18n="events.label.addr">地址</dt>
+              <dd data-i18n="events.banquet.addr">807 高雄市三民區德西里十全三路 265 號</dd>
+            </div>
+          </dl>
+          <a class="map-btn" target="_blank" rel="noopener"
+             href="https://www.google.com/maps/search/?api=1&query=%E8%80%81%E6%96%B0%E5%8F%B0%E8%8F%9C%E5%8D%81%E5%85%A8%E5%BA%97">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/>
+            </svg>
+            <span data-i18n="events.map">開啟地圖 Map</span>
+          </a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════ 頁尾 ══════════ -->
+  <footer class="footer">
+    <p class="footer-names"><span data-i18n="hero.groom">昱恩</span> <span class="amp">＆</span> <span data-i18n="hero.bride">雨蕎</span></p>
+    <p class="footer-date">2027.05.23</p>
+    <p class="footer-note" data-i18n="footer.note">感謝您與我們一同見證這個幸福的時刻 ♡</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

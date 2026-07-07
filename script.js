@@ -128,23 +128,31 @@ document.getElementById("langBtn").addEventListener("click", () => {
 
 applyLang();
 
-/* ═══════════ 倒數計時（婚期：2027/5/23 09:30 台灣時間） ═══════════ */
-const WEDDING = new Date("2027-05-23T09:30:00+08:00").getTime();
+/* ═══════════ 目前頁面標示 ═══════════ */
+const currentPage = location.pathname.split("/").pop() || "index.html";
+document.querySelectorAll(".nav-links a").forEach(a => {
+  if (a.getAttribute("href") === currentPage) a.classList.add("active");
+});
 
-function tick() {
-  const diff = Math.max(0, WEDDING - Date.now());
-  const d = Math.floor(diff / 86400000);
-  const h = Math.floor(diff / 3600000) % 24;
-  const m = Math.floor(diff / 60000) % 60;
-  const s = Math.floor(diff / 1000) % 60;
-  document.getElementById("cdDays").textContent = d;
-  document.getElementById("cdHours").textContent = String(h).padStart(2, "0");
-  document.getElementById("cdMins").textContent = String(m).padStart(2, "0");
-  document.getElementById("cdSecs").textContent = String(s).padStart(2, "0");
+/* ═══════════ 倒數計時（婚期：2027/5/23 09:30 台灣時間）— 僅首頁 ═══════════ */
+if (document.getElementById("cdDays")) {
+  const WEDDING = new Date("2027-05-23T09:30:00+08:00").getTime();
+
+  const tick = () => {
+    const diff = Math.max(0, WEDDING - Date.now());
+    const d = Math.floor(diff / 86400000);
+    const h = Math.floor(diff / 3600000) % 24;
+    const m = Math.floor(diff / 60000) % 60;
+    const s = Math.floor(diff / 1000) % 60;
+    document.getElementById("cdDays").textContent = d;
+    document.getElementById("cdHours").textContent = String(h).padStart(2, "0");
+    document.getElementById("cdMins").textContent = String(m).padStart(2, "0");
+    document.getElementById("cdSecs").textContent = String(s).padStart(2, "0");
+  };
+
+  tick();
+  setInterval(tick, 1000);
 }
-
-tick();
-setInterval(tick, 1000);
 
 /* ═══════════ 手機版選單 ═══════════ */
 const menuBtn = document.getElementById("menuBtn");
@@ -159,29 +167,32 @@ navLinks.querySelectorAll("a").forEach(a =>
   a.addEventListener("click", () => navLinks.classList.remove("open"))
 );
 
-/* ═══════════ 相簿燈箱 ═══════════ */
+/* ═══════════ 相簿燈箱 — 僅相簿頁 ═══════════ */
 const lightbox = document.getElementById("lightbox");
-const lightboxImg = document.getElementById("lightboxImg");
 
-document.querySelectorAll(".gallery-grid img").forEach(img => {
-  img.parentElement.addEventListener("click", () => {
-    lightboxImg.src = img.src;
-    lightbox.hidden = false;
-    document.body.style.overflow = "hidden";
+if (lightbox) {
+  const lightboxImg = document.getElementById("lightboxImg");
+
+  document.querySelectorAll(".gallery-grid img").forEach(img => {
+    img.parentElement.addEventListener("click", () => {
+      lightboxImg.src = img.src;
+      lightbox.hidden = false;
+      document.body.style.overflow = "hidden";
+    });
   });
-});
 
-function closeLightbox() {
-  lightbox.hidden = true;
-  lightboxImg.src = "";
-  document.body.style.overflow = "";
+  const closeLightbox = () => {
+    lightbox.hidden = true;
+    lightboxImg.src = "";
+    document.body.style.overflow = "";
+  };
+
+  lightbox.addEventListener("click", e => {
+    if (e.target !== lightboxImg) closeLightbox();
+  });
+
+  document.getElementById("lightboxClose").addEventListener("click", closeLightbox);
+  document.addEventListener("keydown", e => {
+    if (e.key === "Escape" && !lightbox.hidden) closeLightbox();
+  });
 }
-
-lightbox.addEventListener("click", e => {
-  if (e.target !== lightboxImg) closeLightbox();
-});
-
-document.getElementById("lightboxClose").addEventListener("click", closeLightbox);
-document.addEventListener("keydown", e => {
-  if (e.key === "Escape" && !lightbox.hidden) closeLightbox();
-});

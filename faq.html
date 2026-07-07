@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>昱恩 ＆ 雨蕎 | 我們的婚禮</title>
+  <title>常見問題 | 昱恩 ＆ 雨蕎</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Noto+Serif+TC:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="subpage">
 
   <!-- ══════════ 導覽列 ══════════ -->
   <header class="nav" id="top">
@@ -40,33 +40,36 @@
     </div>
   </header>
 
-  <!-- ══════════ 首頁 ══════════ -->
-  <section class="hero" id="home">
-    <div class="hero-photo"></div>
-    <div class="hero-veil"></div>
-    <div class="sparkles" aria-hidden="true">
-      <span>✦</span><span>✧</span><span>✦</span><span>✧</span><span>✦</span>
-      <span>✧</span><span>✦</span><span>✧</span><span>✦</span><span>✧</span>
-    </div>
+  <main class="page-main">
+    <section class="section section-tinted" id="faq">
+      <p class="section-script">Q &amp; A</p>
+      <h2 class="section-title" data-i18n="faq.title">常見問題</h2>
+      <div class="section-divider" aria-hidden="true"><span class="line"></span><span class="gem">◆</span><span class="line"></span></div>
 
-    <div class="hero-content">
-      <p class="hero-script" data-i18n="hero.script">Happily Ever After</p>
-      <h1 class="hero-names"><span data-i18n="hero.groom">昱恩</span> <span class="amp">＆</span> <span data-i18n="hero.bride">雨蕎</span></h1>
-      <div class="hero-divider" aria-hidden="true">
-        <span class="line"></span><span class="gem">◆</span><span class="line"></span>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary data-i18n="faq.q1">婚禮當天有服裝上的建議嗎？</summary>
+          <p data-i18n="faq.a1">穿著整潔、舒適的半正式服裝即可。若願意搭配我們的主題色（藍色系）出席，我們會非常開心！</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq.q2">可以攜伴或帶小朋友一起參加嗎？</summary>
+          <p data-i18n="faq.a2">當然歡迎！為了方便安排席次，再麻煩您事先告知出席人數，謝謝。</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq.q3">典禮和婚宴是在同一個地方嗎？</summary>
+          <p data-i18n="faq.a3">不是喔！早上的結婚典禮在真耶穌教會十全教會，中午的婚宴在老新台菜十全店，兩地車程約 10 分鐘，詳細地址請見「活動流程」。</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq.q4">會場附近好停車嗎？</summary>
+          <p data-i18n="faq.a4">兩個會場周邊的停車資訊我們正在整理中，會在婚禮前更新於「停車資訊」頁面，敬請留意。</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq.q5">有其他問題想詢問怎麼辦？</summary>
+          <p data-i18n="faq.a5">歡迎直接私訊新人，我們會盡快回覆您！</p>
+        </details>
       </div>
-      <p class="hero-date" data-i18n="hero.date">2027 年 5 月 23 日（星期日）・高雄</p>
-
-      <div class="countdown" id="countdown" aria-label="倒數計時">
-        <div class="cd-cell"><span class="cd-num" id="cdDays">—</span><span class="cd-label" data-i18n="cd.days">天</span></div>
-        <div class="cd-cell"><span class="cd-num" id="cdHours">—</span><span class="cd-label" data-i18n="cd.hours">時</span></div>
-        <div class="cd-cell"><span class="cd-num" id="cdMins">—</span><span class="cd-label" data-i18n="cd.mins">分</span></div>
-        <div class="cd-cell"><span class="cd-num" id="cdSecs">—</span><span class="cd-label" data-i18n="cd.secs">秒</span></div>
-      </div>
-
-      <a class="hero-cta" href="events.html" data-i18n="hero.cta">誠摯邀請您的蒞臨</a>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- ══════════ 頁尾 ══════════ -->
   <footer class="footer">

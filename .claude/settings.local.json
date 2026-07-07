@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell($dir = \"$env:LOCALAPPDATA\\\\gh-cli\"; New-Item -ItemType Directory -Force $dir | Out-Null; $zip = \"$env:TEMP\\\\gh.zip\"; Invoke-WebRequest -Uri \"https://github.com/cli/cli/releases/download/v2.96.0/gh_2.96.0_windows_amd64.zip\" -OutFile $zip; Expand-Archive $zip $dir -Force; Remove-Item $zip -Confirm:$false; & \"$dir\\\\gh_2.96.0_windows_amd64\\\\bin\\\\gh.exe\" --version)",
+      "PowerShell(Get-ChildItem \"$env:LOCALAPPDATA\\\\gh-cli\" -Recurse | Select-Object FullName)",
+      "PowerShell(& \"$env:LOCALAPPDATA\\\\gh-cli\\\\bin\\\\gh.exe\" --version)",
+      "PowerShell(\"\" | & \"$env:LOCALAPPDATA\\\\gh-cli\\\\bin\\\\gh.exe\" auth login --web --hostname github.com --git-protocol https)",
+      "PowerShell(Start-Process \"https://github.com/login/device\")",
+      "PowerShell(& \"$env:LOCALAPPDATA\\\\gh-cli\\\\bin\\\\gh.exe\" auth status)",
+      "Bash(\"/c/Users/ericl/AppData/Local/gh-cli/bin/gh.exe\" auth *)"
+    ]
+  }
+}
