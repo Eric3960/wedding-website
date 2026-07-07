@@ -18,6 +18,19 @@ const I18N = {
     "gallery.title": "甜蜜相簿",
     "gallery.note": "婚紗照拍攝中，先跟大家分享我們一路走來的小回憶 ♡",
 
+    "story.title": "我們的故事",
+    "story.p1": "昱恩就讀中興大學環境工程學系，雨蕎則在中山醫學大學護理系。起初，我們只是團契裡擦身而過的兩個人，並沒有特別留意彼此。但隨著契員們日漸熟絡，我們也在一次次的聚會中，慢慢認識了對方。",
+    "story.p2": "先動心的是昱恩。他藉著 Instagram 上一來一往的訊息，一點一點地走近雨蕎，更邀約她一起讀經、一起禱告。在神的話語中，我們看見了彼此最真實的模樣，情愫也在不知不覺間悄悄滋長。",
+    "story.p3": "寒假結束後，昱恩邀請雨蕎一同回台中。2023 年 2 月 8 日，我們確認以結婚為前提交往，並在第一時間告訴了雙方的父母——因為我們相信，認真的感情，值得被光明正大地祝福。",
+    "story.p4": "一路走來並非總是順遂，無論是課業的壓力，還是職場的挑戰，我們都曾一起經歷。但每一次的困難，我們都選擇一起跪下禱告，倚靠神的帶領去面對。也正是這些風雨，讓我們更加確信：彼此就是神為對方預備的那個人。",
+    "story.p5": "2025 年 8 月，在雙方家長滿滿的支持與祝福下，我們決定攜手走入婚姻——",
+    "story.p6": "2027 年 5 月 23 日，我們將在神與眾人的見證下，許下一生的約定。",
+    "story.p7": "誠摯邀請您，來見證我們故事的下一章。",
+
+    "rsvp.title": "婚宴出席調查",
+    "rsvp.note": "您被邀請參加「昱恩＆雨蕎婚宴」，請點擊下方照片填寫出席調查表 ♡",
+    "rsvp.cap": "點擊照片・填寫出席調查表 ✉",
+
     "events.title": "活動流程",
     "events.label.time": "時間",
     "events.label.place": "地點",
@@ -40,7 +53,7 @@ const I18N = {
 
     "faq.title": "常見問題",
     "faq.q1": "婚禮當天有服裝上的建議嗎？",
-    "faq.a1": "穿著整潔、舒適的半正式服裝即可。若願意搭配我們的主題色（藍色系）出席，我們會非常開心！",
+    "faq.a1": "穿著整潔、舒適的半正式服裝即可。若願意搭配我們的主題色（粉色系）出席，我們會非常開心！",
     "faq.q2": "可以攜伴或帶小朋友一起參加嗎？",
     "faq.a2": "當然歡迎！為了方便安排席次，再麻煩您事先告知出席人數，謝謝。",
     "faq.q3": "典禮和婚宴是在同一個地方嗎？",
@@ -71,6 +84,19 @@ const I18N = {
     "gallery.title": "Gallery",
     "gallery.note": "Wedding photos coming soon — here are some sweet memories along the way ♡",
 
+    "story.title": "Our Story",
+    "story.p1": "Yu-En studied Environmental Engineering at National Chung Hsing University, while Yu-Chiao studied Nursing at Chung Shan Medical University. At first, we were just two people passing each other by in our church fellowship, paying no particular attention to one another. But as the members grew closer, gathering after gathering, we slowly came to know each other.",
+    "story.p2": "Yu-En was the first to fall. Through messages back and forth on Instagram, he drew closer to Yu-Chiao little by little, and invited her to read the Bible and pray together. In God's word we saw each other's truest selves, and affection quietly grew before we even realized it.",
+    "story.p3": "After winter break, Yu-En invited Yu-Chiao to return to Taichung together. On February 8, 2023, we began dating with marriage in mind — and told both our parents right away, because we believe a sincere love deserves to be blessed openly.",
+    "story.p4": "The road has not always been smooth. From the pressures of school to the challenges of work, we have been through it all together. Each time difficulty came, we chose to kneel and pray together, relying on God's guidance to face it. It is these very storms that made us all the more certain: we are the ones God prepared for each other.",
+    "story.p5": "In August 2025, with the full support and blessing of both families, we decided to walk into marriage hand in hand —",
+    "story.p6": "On May 23, 2027, before God and all our loved ones, we will make our lifelong vows.",
+    "story.p7": "We sincerely invite you to witness the next chapter of our story.",
+
+    "rsvp.title": "R.S.V.P.",
+    "rsvp.note": "You are invited to Yu-En & Yu-Chiao's wedding banquet — please tap the photo below to fill out the RSVP form ♡",
+    "rsvp.cap": "Tap the photo to RSVP ✉",
+
     "events.title": "Events",
     "events.label.time": "Time",
     "events.label.place": "Venue",
@@ -93,7 +119,7 @@ const I18N = {
 
     "faq.title": "FAQs",
     "faq.q1": "Is there a dress code?",
-    "faq.a1": "Neat, comfortable semi-formal attire is perfect. We'd be thrilled if you join us in our theme colors — shades of blue!",
+    "faq.a1": "Neat, comfortable semi-formal attire is perfect. We'd be thrilled if you join us in our theme colors — shades of pink!",
     "faq.q2": "Can I bring a plus-one or kids?",
     "faq.a2": "Of course! To help us arrange seating, please let us know your party size in advance. Thank you!",
     "faq.q3": "Are the ceremony and banquet at the same place?",
