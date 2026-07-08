@@ -22,8 +22,8 @@
 
 ## 風格
 
-睡美人溫柔粉：蜜糖粉/淡粉/銀霧白/粉 Topaz 金（`--deep #66293d`、`--navy`、`--dusty`、`--baby`、`--ice`、`--silver`、`--gold`）。
-前一版是仙度瑞拉夢幻藍（git 歷史 commit `768aff8` 以前），使用者在比較兩種風格，可能會要求切回或調整。
+目前是仙度瑞拉夢幻藍：寶寶藍/霧霾藍/銀白/深海藍（配色集中在 `:root` 變數）。
+使用者在藍色與「睡美人溫柔粉」（蜜糖粉/淡粉/銀霧白/粉 Topaz 金，見 commit `e3809da`）之間比較，可能會再切換——切換時除了 `:root`，還要換掉 style.css 裡所有寫死的 rgba/hex（hero-veil、光暈、陰影、footer、lightbox、RSVP caption）以及 `script.js` faq.a1 的主題色描述（zh+en）。
 Hero 文字有白色光暈 + 加強版白霧漸層，是為了寬螢幕可讀性（使用者反映過字看不清楚）。
 
 ## 部署

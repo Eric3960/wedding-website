@@ -1,18 +1,18 @@
 /* ═══════════════════════════════════════════════
-   睡美人溫柔粉 — 婚禮網站
-   蜜糖粉 / 淡粉 / 銀霧白 / 粉 Topaz 金
+   仙度瑞拉夢幻藍 — 婚禮網站
+   寶寶藍 / 霧霾藍 / 銀白 / 深海藍
    ═══════════════════════════════════════════════ */
 
 :root {
-  --deep: #66293d;        /* 深玫瑰 */
-  --navy: #8f4a62;        /* 玫瑰粉 */
-  --dusty: #cb92a4;       /* 蜜糖粉 */
-  --baby: #f2ccd6;        /* 淡粉 */
-  --ice: #fbedf1;
-  --silver: #fdf8f9;      /* 銀霧白 */
-  --gold: #c98f6f;        /* 粉 Topaz 金 */
+  --deep: #1d3a5f;        /* 深海藍 */
+  --navy: #2c4d78;
+  --dusty: #7d9cc0;       /* 霧霾藍 */
+  --baby: #bcd4ec;        /* 寶寶藍 */
+  --ice: #e9f1f9;
+  --silver: #f7fafd;      /* 銀白 */
+  --gold: #7d9cc0;        /* 點綴（藍色版沿用霧霾藍） */
   --shine: #ffffff;
-  --shadow: 0 10px 30px rgba(102, 41, 61, 0.12);
+  --shadow: 0 10px 30px rgba(29, 58, 95, 0.12);
   --serif-en: "Playfair Display", serif;
   --serif-tc: "Noto Serif TC", serif;
   --script: "Great Vibes", cursive;
@@ -41,9 +41,9 @@ body {
   justify-content: space-between;
   gap: 1rem;
   padding: 0.7rem 1.4rem;
-  background: rgba(253, 248, 249, 0.88);
+  background: rgba(247, 250, 253, 0.88);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(203, 146, 164, 0.25);
+  border-bottom: 1px solid rgba(125, 156, 192, 0.25);
 }
 
 .nav-monogram {
@@ -92,7 +92,7 @@ body {
   letter-spacing: 0.08em;
   color: var(--deep);
   background: linear-gradient(135deg, var(--ice), var(--baby));
-  border: 1px solid rgba(203, 146, 164, 0.45);
+  border: 1px solid rgba(125, 156, 192, 0.45);
   border-radius: 999px;
   padding: 0.4rem 0.9rem;
   cursor: pointer;
@@ -100,7 +100,7 @@ body {
 }
 
 .lang-btn:hover, .menu-btn:hover {
-  box-shadow: 0 4px 14px rgba(203, 146, 164, 0.35);
+  box-shadow: 0 4px 14px rgba(125, 156, 192, 0.35);
   transform: translateY(-1px);
 }
 
@@ -127,18 +127,18 @@ body {
   inset: 0;
   background:
     linear-gradient(to bottom,
-      rgba(102, 41, 61, 0.35) 0%,
-      rgba(102, 41, 61, 0.05) 28%,
-      rgba(251, 237, 241, 0.45) 48%,
-      rgba(251, 237, 241, 0.88) 66%,
-      rgba(253, 248, 249, 0.97) 82%,
+      rgba(29, 58, 95, 0.35) 0%,
+      rgba(29, 58, 95, 0.05) 28%,
+      rgba(233, 241, 249, 0.45) 48%,
+      rgba(233, 241, 249, 0.88) 66%,
+      rgba(247, 250, 253, 0.97) 82%,
       var(--silver) 100%);
 }
 
 .sparkles span {
   position: absolute;
   color: rgba(255, 255, 255, 0.9);
-  text-shadow: 0 0 8px rgba(244, 208, 218, 0.9);
+  text-shadow: 0 0 8px rgba(188, 212, 236, 0.9);
   animation: twinkle 3.2s ease-in-out infinite;
   font-size: 1rem;
 }
@@ -170,7 +170,7 @@ body {
 .hero-script {
   font-family: var(--script);
   font-size: clamp(1.8rem, 4vw, 2.6rem);
-  color: #732c46;
+  color: #35597f;
   margin-bottom: 0.4rem;
   text-shadow: 0 1px 10px rgba(255, 255, 255, 0.95), 0 0 26px rgba(255, 255, 255, 0.85);
 }
@@ -180,7 +180,7 @@ body {
   font-weight: 700;
   font-size: clamp(2.2rem, 6vw, 3.6rem);
   letter-spacing: 0.15em;
-  color: #55182e;
+  color: #142c4a;
   text-shadow: 0 1px 12px rgba(255, 255, 255, 0.95), 0 0 32px rgba(255, 255, 255, 0.85);
 }
 
@@ -207,7 +207,7 @@ body {
   font-size: clamp(1rem, 2.4vw, 1.25rem);
   letter-spacing: 0.25em;
   font-weight: 500;
-  color: #55182e;
+  color: #142c4a;
   text-shadow: 0 1px 10px rgba(255, 255, 255, 0.95), 0 0 24px rgba(255, 255, 255, 0.85);
 }
 
@@ -223,7 +223,7 @@ body {
   min-width: clamp(62px, 9vw, 84px);
   padding: 0.7rem 0.4rem 0.55rem;
   background: rgba(255, 255, 255, 0.75);
-  border: 1px solid rgba(203, 146, 164, 0.4);
+  border: 1px solid rgba(125, 156, 192, 0.4);
   border-radius: 14px;
   box-shadow: var(--shadow);
   backdrop-filter: blur(6px);
@@ -253,13 +253,13 @@ body {
   text-decoration: none;
   letter-spacing: 0.2em;
   font-size: 0.95rem;
-  box-shadow: 0 8px 22px rgba(102, 41, 61, 0.35);
+  box-shadow: 0 8px 22px rgba(29, 58, 95, 0.35);
   transition: transform 0.25s, box-shadow 0.25s;
 }
 
 .hero-cta:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 28px rgba(102, 41, 61, 0.45);
+  box-shadow: 0 12px 28px rgba(29, 58, 95, 0.45);
 }
 
 /* ── 子頁面 ─────────────────────────────── */
@@ -346,7 +346,7 @@ body {
 
 .rsvp-link:hover .rsvp-figure {
   transform: translateY(-5px) scale(1.015);
-  box-shadow: 0 18px 40px rgba(102, 41, 61, 0.28);
+  box-shadow: 0 18px 40px rgba(29, 58, 95, 0.28);
 }
 
 .rsvp-figure img {
@@ -357,7 +357,7 @@ body {
 
 .rsvp-figure figcaption {
   padding: 0.85rem 1rem;
-  background: linear-gradient(135deg, var(--gold), #b87a5c);
+  background: linear-gradient(135deg, var(--dusty), var(--navy));
   color: var(--silver);
   letter-spacing: 0.18em;
   font-size: 0.95rem;
@@ -383,7 +383,7 @@ body {
 
 .gallery-grid figure:hover {
   transform: translateY(-4px) scale(1.01);
-  box-shadow: 0 16px 36px rgba(102, 41, 61, 0.22);
+  box-shadow: 0 16px 36px rgba(29, 58, 95, 0.22);
 }
 
 .gallery-grid img {
@@ -403,7 +403,7 @@ body {
 
 .event-card {
   background: rgba(255, 255, 255, 0.82);
-  border: 1px solid rgba(203, 146, 164, 0.35);
+  border: 1px solid rgba(125, 156, 192, 0.35);
   border-radius: 20px;
   padding: 2.2rem 2rem 2rem;
   box-shadow: var(--shadow);
@@ -425,7 +425,7 @@ body {
   display: flex;
   gap: 1rem;
   padding: 0.55rem 0;
-  border-bottom: 1px dashed rgba(203, 146, 164, 0.35);
+  border-bottom: 1px dashed rgba(125, 156, 192, 0.35);
 }
 
 .event-row dt {
@@ -449,13 +449,13 @@ body {
   text-decoration: none;
   letter-spacing: 0.15em;
   font-size: 0.92rem;
-  box-shadow: 0 6px 18px rgba(143, 74, 98, 0.35);
+  box-shadow: 0 6px 18px rgba(44, 77, 120, 0.35);
   transition: transform 0.25s, box-shadow 0.25s;
 }
 
 .map-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 24px rgba(143, 74, 98, 0.45);
+  box-shadow: 0 10px 24px rgba(44, 77, 120, 0.45);
 }
 
 /* ── 停車資訊 ───────────────────────────── */
@@ -469,7 +469,7 @@ body {
 
 .parking-card {
   background: linear-gradient(150deg, #fff 0%, var(--ice) 100%);
-  border: 1px solid rgba(203, 146, 164, 0.35);
+  border: 1px solid rgba(125, 156, 192, 0.35);
   border-radius: 20px;
   padding: 1.8rem 1.9rem;
   box-shadow: var(--shadow);
@@ -493,10 +493,10 @@ body {
 
 .faq-item {
   background: rgba(255, 255, 255, 0.85);
-  border: 1px solid rgba(203, 146, 164, 0.35);
+  border: 1px solid rgba(125, 156, 192, 0.35);
   border-radius: 14px;
   margin-bottom: 0.9rem;
-  box-shadow: 0 4px 14px rgba(102, 41, 61, 0.08);
+  box-shadow: 0 4px 14px rgba(29, 58, 95, 0.08);
   overflow: hidden;
 }
 
@@ -533,7 +533,7 @@ body {
 .footer {
   text-align: center;
   padding: 3.5rem 1.5rem 3rem;
-  background: linear-gradient(180deg, var(--deep), #3a1826);
+  background: linear-gradient(180deg, var(--deep), #14293f);
   color: var(--ice);
 }
 
@@ -556,7 +556,7 @@ body {
   position: fixed;
   inset: 0;
   z-index: 200;
-  background: rgba(58, 24, 38, 0.92);
+  background: rgba(20, 41, 63, 0.92);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -594,9 +594,9 @@ body {
     right: 0;
     flex-direction: column;
     gap: 0;
-    background: rgba(253, 248, 249, 0.97);
+    background: rgba(247, 250, 253, 0.97);
     backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(203, 146, 164, 0.3);
+    border-bottom: 1px solid rgba(125, 156, 192, 0.3);
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.35s ease;
@@ -606,6 +606,6 @@ body {
 
   .nav-links a {
     padding: 0.9rem 1.6rem;
-    border-bottom: 1px solid rgba(203, 146, 164, 0.18);
+    border-bottom: 1px solid rgba(125, 156, 192, 0.18);
   }
 }
