@@ -170,9 +170,12 @@ body {
 .hero-script {
   font-family: var(--script);
   font-size: clamp(1.8rem, 4vw, 2.6rem);
-  color: #8c2e56;
+  color: #d4548f;
   margin-bottom: 0.4rem;
-  text-shadow: 0 1px 10px rgba(255, 255, 255, 0.95), 0 0 26px rgba(255, 255, 255, 0.85);
+  text-shadow:
+    0 0 6px rgba(255, 255, 255, 1),
+    0 1px 12px rgba(255, 255, 255, 0.95),
+    0 0 30px rgba(255, 255, 255, 0.9);
 }
 
 .hero-names {
@@ -180,8 +183,11 @@ body {
   font-weight: 700;
   font-size: clamp(2.2rem, 6vw, 3.6rem);
   letter-spacing: 0.15em;
-  color: #641434;
-  text-shadow: 0 1px 12px rgba(255, 255, 255, 0.95), 0 0 32px rgba(255, 255, 255, 0.85);
+  color: #cb2f70;
+  text-shadow:
+    0 0 6px rgba(255, 255, 255, 1),
+    0 1px 14px rgba(255, 255, 255, 0.95),
+    0 0 36px rgba(255, 255, 255, 0.9);
 }
 
 .hero-divider, .section-divider {
@@ -207,8 +213,11 @@ body {
   font-size: clamp(1rem, 2.4vw, 1.25rem);
   letter-spacing: 0.25em;
   font-weight: 500;
-  color: #641434;
-  text-shadow: 0 1px 10px rgba(255, 255, 255, 0.95), 0 0 24px rgba(255, 255, 255, 0.85);
+  color: #c23a71;
+  text-shadow:
+    0 0 6px rgba(255, 255, 255, 1),
+    0 1px 10px rgba(255, 255, 255, 0.95),
+    0 0 26px rgba(255, 255, 255, 0.9);
 }
 
 /* 倒數計時 */
@@ -298,6 +307,7 @@ body {
   font-weight: 600;
   letter-spacing: 0.3em;
   margin-top: 0.2rem;
+  color: #c23a71;
 }
 
 .section-note {
