@@ -53,7 +53,7 @@ const I18N = {
 
     "faq.title": "常見問題",
     "faq.q1": "婚禮當天有服裝上的建議嗎？",
-    "faq.a1": "穿著整潔、舒適的半正式服裝即可。若願意搭配我們的主題色（藍色系）出席，我們會非常開心！",
+    "faq.a1": "穿著整潔、舒適的半正式服裝即可。若願意搭配我們的主題色（粉色系）出席，我們會非常開心！",
     "faq.q2": "可以攜伴或帶小朋友一起參加嗎？",
     "faq.a2": "當然歡迎！為了方便安排席次，再麻煩您事先告知出席人數，謝謝。",
     "faq.q3": "典禮和婚宴是在同一個地方嗎？",
@@ -119,7 +119,7 @@ const I18N = {
 
     "faq.title": "FAQs",
     "faq.q1": "Is there a dress code?",
-    "faq.a1": "Neat, comfortable semi-formal attire is perfect. We'd be thrilled if you join us in our theme colors — shades of blue!",
+    "faq.a1": "Neat, comfortable semi-formal attire is perfect. We'd be thrilled if you join us in our theme colors — shades of pink!",
     "faq.q2": "Can I bring a plus-one or kids?",
     "faq.a2": "Of course! To help us arrange seating, please let us know your party size in advance. Thank you!",
     "faq.q3": "Are the ceremony and banquet at the same place?",
